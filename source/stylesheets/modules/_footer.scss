@@ -5,12 +5,18 @@
 
 // Setup
 // ------------------------------------------------------------------------
+$footer-padding: 24px;
 
 
 // Module core
 // ------------------------------------------------------------------------
 .footer {
-  @extend .section-slim;
+  padding-top: $footer-padding;
+  padding-bottom: $footer-padding;
+
+  @media (min-width: $screen-sm-min) {
+    @extend .section-slim;
+  }
 }
 
 
