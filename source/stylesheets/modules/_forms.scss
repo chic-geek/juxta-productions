@@ -1,0 +1,63 @@
+/// ------------------------------------------------------------------------
+// Module: Forms
+// ------------------------------------------------------------------------
+//
+
+// Setup
+// ------------------------------------------------------------------------
+
+
+// Module core
+// ------------------------------------------------------------------------
+.form-control {
+  background-color: transparent;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  &:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  &::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+textarea.form-control {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.form-header {
+  margin-top: 30px !important;
+  margin-top: 10px;
+}
+
+
+// Module variants
+// ------------------------------------------------------------------------
+.former-form {
+  iframe {
+    background-color: $color-primary;
+  }
+}
+
+
+// Module helpers
+// ------------------------------------------------------------------------
+.form-aligned-left {
+  text-align: left;
+}

@@ -1,0 +1,108 @@
+/// ------------------------------------------------------------------------
+// Module: Navbar
+// ------------------------------------------------------------------------
+//
+
+// Setup
+// ------------------------------------------------------------------------
+$navbar-wrapper-z-index: 20;
+$navbar-text-color: #EEC370;
+$navbar-wrapper-bg-color: #9E1001;
+
+
+// Module core
+// ------------------------------------------------------------------------
+.navbar-wrapper {
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: $navbar-wrapper-z-index;
+
+  @media (min-width: $screen-sm-min) {
+    background-color: $navbar-wrapper-bg-color;
+  }
+}
+
+  .navbar-custom {
+    background-color: transparent;
+    border-bottom-color: transparent;
+
+    @media (min-width: $screen-sm-min) {
+      border: 0;
+      margin-bottom: 0;
+    }
+
+    .navbar-toggle {
+      border-color: rgba(255, 255, 255, 0.3);
+      margin-right: 0;
+
+      .icon-bar {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+      background-color: $navbar-wrapper-bg-color;
+    }
+
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+      @media (min-width: $screen-sm-min) {
+        border-radius: none;
+        background-color: transparent;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: darken($navbar-text-color, 15%);
+      }
+    }
+
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+      color: darken($navbar-text-color, 15%);
+    }
+
+    .navbar-nav > li > a {
+      @extend .font-open-sans-bold;
+      color: $navbar-text-color;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: color, border 0.4s ease-in-out;
+
+      @media (min-width: $screen-sm-min) {
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: $navbar-wrapper-bg-color;
+      }
+    }
+
+    .navbar-nav {
+      @media (min-width: $screen-sm-min) {
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+      }
+    }
+
+    .navbar-collapse {
+      background-color: $navbar-wrapper-bg-color;
+      border-top-color: transparent;
+
+      @media (min-width: $screen-sm-min) {
+        text-align: center;
+      }
+    }
+  }
+
+  .navbar-header {
+    background-color: transparent;
+  }
+
+
+// Module variants
+// ------------------------------------------------------------------------
+
+
+// Module helpers
+// ------------------------------------------------------------------------

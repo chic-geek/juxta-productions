@@ -1,0 +1,17 @@
+/// ------------------------------------------------------------------------
+// Module: Utilities
+// ------------------------------------------------------------------------
+//
+
+// Module helpers
+// ------------------------------------------------------------------------
+
+// Text alignment
+.text-align-centered { text-align: center; }
+.text-align-left     { text-align: left;   }
+.text-align-right    { text-align: right;  }
+
+// Element alignment
+.element-align-centered { margin-left: auto; margin-right: auto; text-align: center; }
+.element-align-left     { float: left;                           }
+.element-align-right    { float: right;                          }

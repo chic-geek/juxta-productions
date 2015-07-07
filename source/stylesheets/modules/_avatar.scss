@@ -1,0 +1,56 @@
+/// ------------------------------------------------------------------------
+// Module: Avatar
+// ------------------------------------------------------------------------
+//
+
+// Setup
+// ------------------------------------------------------------------------
+
+
+// Module core
+// ------------------------------------------------------------------------
+.avatars {
+  overflow: hidden;
+}
+
+
+// Module variants
+// ------------------------------------------------------------------------
+.avatars-align-left {
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      float: left;
+    }
+  }
+}
+
+.avatars-align-right {
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      float: right;
+    }
+  }
+}
+
+.avatar-list {
+  display: block;
+  margin: 24px;
+}
+
+.avatar-round {
+  img {
+    border-radius: 50%;
+  }
+}
+
+
+// Module helpers
+// ------------------------------------------------------------------------

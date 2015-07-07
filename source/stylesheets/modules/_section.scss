@@ -1,0 +1,67 @@
+/// ------------------------------------------------------------------------
+// Module: Section
+// ------------------------------------------------------------------------
+//
+
+// Setup
+// ------------------------------------------------------------------------
+$section-padding: 100px;
+$section-odd-bg-color: #FFFFFF;
+$section-even-bg-color: #B31100;
+$section-header-text-color-odd: $color-primary;
+$section-header-text-color-even: $color-secondary;
+
+
+// Module core
+// ------------------------------------------------------------------------
+.section {
+  padding-top: $section-padding / 2;
+  padding-bottom: $section-padding / 2;
+
+  @media (min-width: $screen-sm-min) {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+  }
+
+  &:nth-child(odd) {
+    background-color: $section-odd-bg-color;
+
+    .section-header {
+      color: $section-header-text-color-odd;
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: $section-even-bg-color;
+    color: #FFFFFF;
+
+    .section-header {
+      color: $section-header-text-color-even;
+    }
+  }
+
+  &-header {
+    margin-bottom: 24px;
+  }
+}
+
+
+// Module variants
+// ------------------------------------------------------------------------
+.section-double {
+  @media (min-width: $screen-sm-min) {
+    padding-top: $section-padding * 2;
+    padding-bottom: $section-padding * 2;
+  }
+}
+
+.section-slim {
+  @media (min-width: $screen-sm-min) {
+    padding-top: $section-padding / 2;
+    padding-bottom: $section-padding / 2;
+  }
+}
+
+
+// Module helpers
+// ------------------------------------------------------------------------
