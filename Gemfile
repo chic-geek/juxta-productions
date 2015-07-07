@@ -16,4 +16,3 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 # Custom gems
 gem "bootstrap-sass", :require => false
 gem "jquery-middleman"
-gem "middleman-deploy", "~> 1.0"
