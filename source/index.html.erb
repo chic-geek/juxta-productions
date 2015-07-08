@@ -2,35 +2,7 @@
 title: Welcome to Juxta Productions
 ---
 
-<div class="navbar-wrapper">
-  <div class="container">
-
-    <nav class="navbar navbar-default navbar-custom navbar-static-top">
-      <div class="container">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#about" data-hook="scrollTo">About Juxta</a></li>
-            <li><a href="#team" data-hook="scrollTo">The team</a></li>
-            <li><a href="#workshops" data-hook="scrollTo">The workshops</a></li>
-            <li><a href="#booking" data-hook="scrollTo">Book now</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-
-  </div>
-</div>
+<%= partial "partials/navigation" %>
 
 <section id="home" class="feature">
   <div class="jumbotron">
@@ -262,20 +234,4 @@ title: Welcome to Juxta Productions
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-
-        <div class="text-align-centered">
-          <p><a class="btn btn-default btn-custom" href="#home" data-hook="scrollTo">Back to top <i class="glyphicon glyphicon-arrow-up"></i></a></p><br>
-        </div>
-
-        <div class="text-align-centered">
-          <p class="text-muted small">Copyright &copy; 2015 - Juxta Productions</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</footer>
+<%= partial "partials/footer" %>
