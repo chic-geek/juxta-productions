@@ -11,6 +11,8 @@ $footer-padding: 24px;
 // Module core
 // ------------------------------------------------------------------------
 .footer {
+  background-color: lighten($color-secondary, 25%);
+  color: $color-primary;
   padding-top: $footer-padding;
   padding-bottom: $footer-padding;
 

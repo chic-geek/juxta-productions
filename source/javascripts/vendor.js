@@ -10,3 +10,4 @@
 // ------------------------------------------------------------------------
 //= require jquery
 //= require bootstrap
+//= require vendor/_owlcarousel.js
