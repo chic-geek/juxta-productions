@@ -4,7 +4,9 @@ var CarouselModule = function() {
 
   $(document).ready(function() {
     $('[data-hook="carousel"]').owlCarousel({
-      items: 1
+      items: 1,
+      loop: true,
+      nav: true
     });
   });
 
